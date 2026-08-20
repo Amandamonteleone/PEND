@@ -36,13 +36,14 @@ const produto3 = new Produto("", "Yoki", 8.90, "2023-01-01", "2023-12-31", 8);
     produto1.comprar();
     produto1.vencido();
 //metodo
-    carro2.ligar();
-    carro2.acelerar();
-    carro2.frear();
+    produto2.vender();
+    produto2.comprar();
+    produto2.vencido();
 //metodo
-    carro3.ligar();
-    carro3.acelerar();
-    carro3.frear();
+    produto3.vender();
+    produto3.comprar();
+    produto3.vencido();
+    
 
 console.log("------------------------------");
 console.log("Atributos do produto 1:");
