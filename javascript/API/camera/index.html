@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Localização e Câmera</title>
+
+    <link rel="stylesheet" href="stile.css">
+
+</head>
+
+<body>
+
+    <!-- Localização -->
+    <section>
+
+        <h2>Localização</h2>
+
+        <button id="btnLocalizacao">
+            Obter localização
+        </button>
+
+        <div id="resultadoLocalizacao" class="resultado">
+            Clique no botão para obter sua localização.
+        </div>
+
+    </section>
+
+
+    <!--Câmera-->
+    <div class="camera-fotos">
+
+        <div class="area-camera">
+
+            <h2>Câmera</h2>
+
+            <video id="camera" autoplay></video>
+
+            <button id="botao">
+                Tirar Foto
+            </button>
+
+        </div>
+
+
+        <div class="area-foto">
+
+            <h2>Foto</h2>
+
+            <img id="foto">
+
+        </div>
+
+    </div>
+
+
+    <canvas id="canvas" style="display: none;"></canvas>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

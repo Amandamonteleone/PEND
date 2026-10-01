@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2cfff;
+    text-align: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+h1 {
+    color: #5b3a29;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #5b3a29;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.jogo {
+    background: white;
+    width: 80%;
+    max-width: 900px;
+    min-height: 450px;
+    margin: auto;
+    border-radius: 25px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.comidas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 40%;
+}
+
+.comida {
+    background: #dcd6ff;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    cursor: grab;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: 0.2s;
+}
+
+.comida:hover {
+    transform: scale(1.08);
+}
+
+.gatinho {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gato-area {
+    background-color: #c6a5ff;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gato-area img {
+    width: 200px;
+    height: 230px;
+    object-fit: contain;
+}
+
+#mensagem {
+    margin-top: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #5b3a29;
+}
+
+#finalizar {
+    margin-top: 15px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 12px;
+    background: #6bbf8b;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#finalizar:hover {
+    background: #4d9d72;
+    transform: scale(1.05);
+}

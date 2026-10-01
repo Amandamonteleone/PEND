@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation e Câmera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Geolocation e Câmera</h1>
+        <p>Aplicação utilizando recursos do dispositivo</p>
+    </header>
+
+    <main>
+
+        <!-- GELOCATION -->
+        <section class="card">
+            <h2>Localização</h2>
+
+            <p>
+                Clique no botão abaixo para permitir o acesso
+                à sua localização.
+            </p>
+
+            <button id="btnLocalizacao">
+                Obter Localização
+            </button>
+
+            <div class="resultado">
+                <p>
+                    <strong>Latitude:</strong>
+                    <span id="latitude">---</span>
+                </p>
+
+                <p>
+                    <strong>Longitude:</strong>
+                    <span id="longitude">---</span>
+                </p>
+
+                <p>
+                    <strong>Precisão:</strong>
+                    <span id="precisao">---</span>
+                </p>
+            </div>
+
+            <p id="mensagemLocalizacao"></p>
+        </section>
+
+
+        <!-- CAMERA -->
+        <section class="card">
+            <h2>📷 Câmera</h2>
+
+            <p>
+                Clique no botão abaixo para solicitar acesso
+                à câmera do dispositivo.
+            </p>
+
+            <div class="camera-container">
+                <video id="camera" autoplay playsinline></video>
+            </div>
+
+            <div class="botoes">
+                <button id="btnCamera">
+                    Iniciar Câmera
+                </button>
+
+                <button id="btnParar">
+                    Parar Câmera
+                </button>
+            </div>
+
+            <p id="mensagemCamera"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Atividade de Geolocation e Câmera</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

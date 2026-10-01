@@ -1,0 +1,184 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3dce7;
+    min-height: 100vh;
+    padding: 35px 20px;
+    color: #4b4050;
+}
+
+/* Área da localização */
+
+section {
+    width: 430px;
+    max-width: 90vw;
+    background: #fff8fb;
+    padding: 25px;
+    border-radius: 18px;
+    margin: 0 auto 30px;
+    text-align: center;
+
+    box-shadow: 0 3px 10px rgba(120, 90, 110, 0.12);
+}
+
+section h2 {
+    color: #79566f;
+    font-size: 23px;
+    margin-bottom: 18px;
+}
+
+/* Botão da localização */
+
+#btnLocalizacao {
+    padding: 11px 22px;
+    border: none;
+    border-radius: 20px;
+
+    background: #c9b1d8;
+    color: white;
+
+    font-size: 15px;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#btnLocalizacao:hover {
+    background: #b99bc9;
+}
+
+/* Resultado */
+
+.resultado {
+    margin-top: 18px;
+    padding: 14px;
+
+    background: #f6edf8;
+    border-radius: 12px;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* Câmera e foto */
+
+.camera-fotos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 25px;
+
+    width: 100%;
+}
+
+
+/* Caixinhas */
+
+.area-camera,
+.area-foto {
+    background: #fff8fb;
+
+    padding: 20px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 3px 10px rgba(120, 90, 110, 0.12);
+
+    text-align: center;
+}
+
+.area-camera h2,
+.area-foto h2 {
+    color: #79566f;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+/* Câmera */
+
+#camera {
+    display: block;
+
+    width: 400px !important;
+    height: 300px !important;
+
+    object-fit: cover;
+
+    background: #d9c9e3;
+
+    border: 5px solid #f3e8f5;
+    border-radius: 15px;
+}
+
+
+/* Foto */
+
+#foto {
+    display: block;
+
+    width: 400px;
+    height: 300px;
+
+    object-fit: cover;
+
+    background: #eee3ed;
+
+    border: 5px solid #f3e8f5;
+    border-radius: 15px;
+}
+
+#botao {
+    display: block;
+
+    margin: 25px auto 5px;
+
+    padding: 12px 28px;
+
+    border: none;
+    border-radius: 20px;
+
+    background: #d09ab9;
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#botao:hover {
+    background: #c387aa;
+}
+
+/* Celular */
+
+@media (max-width: 900px) {
+
+    .camera-fotos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .area-camera,
+    .area-foto {
+        width: 430px;
+        max-width: 90vw;
+    }
+
+    #camera,
+    #foto {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 4 / 3;
+    }
+}
